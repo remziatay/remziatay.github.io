@@ -6,6 +6,7 @@
   "scripts": {
     "start": "parcel index.html --open --out-dir dist-dev",
     "build": "rimraf dist && parcel build index.html --no-source-maps",
+	"predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "license": "ISC",
